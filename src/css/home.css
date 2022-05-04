@@ -1,0 +1,21 @@
+#principal {
+    background: url(../img/principal.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    color: #000;
+
+    text-align: center;
+
+    padding: 18em 0;
+}
+
+@media screen and (min-width: 1024px) {
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+}

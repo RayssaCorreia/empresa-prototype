@@ -13,7 +13,7 @@ body, .text-empresa, .projetos-1, .projetos-2, .main-fundadores, .fundador, .cur
 }
 
 .sobre {
-    padding: 8em;
+    padding: 5em;
 
     display: flex;
     flex-direction: column;
@@ -112,6 +112,28 @@ h3 {
     content: "\1F393  ";
 }
 
+/* tablet */
+
+@media screen and (min-width: 768px) {
+    .img-empresa {
+        width: 40em;
+        height: auto;
+    }
+
+    .text-empresa {
+        text-align: left;
+        padding: 0 2em;
+    }
+
+    .fundadores {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* desktop */
+
 @media screen and (min-width: 1024px) {
     .sobre { 
         display: flex;
@@ -119,12 +141,12 @@ h3 {
     }
 
     .img-empresa {
-        width: 35em;
+        width: 50em;
         height: auto;
     }
 
     .text-empresa {
-        text-align: left;
+        padding: 0 7em;
     }
 
     .projetos {
