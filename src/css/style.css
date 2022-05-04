@@ -1,0 +1,115 @@
+:root {
+    /* colors */
+    --logo-color: #fff;
+    --text-color: #444;
+    --link-color-1: #ffffff;
+    --cabecalho-rodape-color-1: #000000;
+    --cabecalho-rodape-color-2: #444;
+    
+    /* fonts */
+    --main-font: 'Robolo', sans-serif;
+    --logo-font: 'Righteous', sans-serif;
+}
+
+body {
+    color: var(--text-color);
+
+    font-family: var(--main-font);
+}
+
+header, .links-cabecalho, footer, .rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background: linear-gradient(to right, var(--cabecalho-rodape-color-1), var(--cabecalho-rodape-color-2));
+
+    padding: 3em 1.8em;
+}
+
+header, .rodape {
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+/* cabecalho */
+header {
+    box-shadow: 5px 5px 5px #00000031;
+
+    gap: 5em;
+}
+
+h1 a {
+    color: var(--logo-color);
+
+    font-family: var(--logo-font);
+    text-decoration: none;
+
+    font-size: 3em;
+}
+
+.links {
+    text-align: center;
+
+    gap: 2em;
+}
+
+.cabecalho-link, .rodape-link {
+    color: var(--link-color-1);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 0 0.5em;
+}
+
+.cabecalho-link {
+    font-size: 1.5em;
+}
+
+.cabecalho-link:hover, .rodape-link:hover {
+    opacity: 0.8;
+}
+
+/* rodape */
+footer {
+    flex-direction: column;
+}
+
+.links-rodape {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-icon {
+    width: 3em;
+    height: auto;
+}
+
+.rodape-copy {
+    color: white;
+
+    text-align: center;
+
+    font-size: 0.8em;
+    padding-top: 4em;
+}
+
+@media screen and (min-width: 1024px) {   
+    header, .links, footer, .rodape {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header, .rodape {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* rodape */
+    footer {
+        flex-direction: column;
+    }
+}
