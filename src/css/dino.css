@@ -1,0 +1,23 @@
+h2 , h3{
+    padding: 1.2em 1.0em;  /*espaço entre    padding: 1.2em 3em;         1.2 emcima e embaixo     3 esquerda pra direita*/ 
+ }
+ 
+ h2{
+     font-size: 1.2em; 
+ }
+ h3{
+     font-size: 1.2em;
+ }
+ li:before {    
+     content: "• "   /* dos pontinhos */
+ }
+ p{
+     padding: 0.2em 1.0em;   /*linha*/
+ }
+ li {
+     padding: 0.1em 1.0em;
+ }
+ .img-dino{
+ border-radius:1em;                 /*borda */
+ box-shadow: 5px 5px 5px #00000031;  
+ }
