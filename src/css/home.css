@@ -1,16 +1,33 @@
-#principal {
-    background: url(../img/principal.png);
+.principal {
+    background: url(../img/principal-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
 
-    color: #000;
-
-    text-align: center;
-
-    padding: 18em 0;
+    padding: 160px 0;
 }
 
+.text-principal {
+    display: none;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* desktop */
 @media screen and (min-width: 1024px) {
+    .principal {
+        background: linear-gradient(rgba(0, 0, 0, 0.374), rgba(0, 0, 0, 0.367)), url(../img/principal.png);
+        color: rgb(255, 255, 255);
+
+        text-align: center;
+    }
+
+    .text-principal {
+        display: inline-block;
+    }
+
     h2 {
         font-size: 3em;
     }
