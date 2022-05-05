@@ -9,106 +9,106 @@
     /* fonts */
     --main-font: 'Robolo', sans-serif;
     --logo-font: 'Righteous', sans-serif;
+    --title-font: 'Lobster', cursive;
 }
 
 body {
-    color: var(--text-color);
-
     font-family: var(--main-font);
-}
-
-header, .links-cabecalho, footer, .rodape {
-    display: flex;
-    flex-direction: column;
+    
+    color: var(--text-color);
 }
 
 header, footer {
+    color: var(--logo-color);
     background: linear-gradient(to right, var(--cabecalho-rodape-color-1), var(--cabecalho-rodape-color-2));
 
-    padding: 3em 1.8em;
+    padding: 30px;
+    gap: 30px;
 }
 
-header, .rodape {
-    justify-content: space-between;
+header, footer, .links, .rodape {
+    display: flex;
+}
+
+header, footer, .links-cabecalho, .rodape {
+    flex-direction: column;
+}
+
+header, .rodape, .rodape-links {
+    justify-content: space-around;
     align-items: center;
-    gap: 3em;
+}
+
+.links, .rodape-copy {
+    text-align: center;
+}
+
+.link-cabecalho, .social-link {
+    color: var(--link-color-1);
+
+    text-decoration: none;
+    transition: .5s;
+}
+.links-cabecalho, .rodape {
+    gap: 20px;
+}
+
+h2 {
+    font-family: var(--title-font);
 }
 
 /* cabecalho */
 header {
     box-shadow: 5px 5px 5px #00000031;
-
-    gap: 5em;
 }
 
 h1 a {
+    font-family: var(--logo-font);
+
     color: var(--logo-color);
 
-    font-family: var(--logo-font);
-    text-decoration: none;
+    font-size: 40px;
 
-    font-size: 3em;
+    text-decoration: none;
 }
 
 .links {
-    text-align: center;
-
-    gap: 2em;
+    text-transform: uppercase;
+    
+    gap: 25px;
 }
 
-.cabecalho-link, .rodape-link {
-    color: var(--link-color-1);
-
-    text-decoration: none;
-    font-weight: bold;
-
-    padding: 0 0.5em;
+.link-cabecalho {
+    font-size: 16px;
 }
 
-.cabecalho-link {
-    font-size: 1.5em;
-}
-
-.cabecalho-link:hover, .rodape-link:hover {
-    opacity: 0.8;
+.link-cabecalho:hover {
+    color: rgb(226, 193, 103);
 }
 
 /* rodape */
 footer {
-    flex-direction: column;
-}
-
-.links-rodape {
-    display: flex;
-    flex-direction: row;
+    gap: 30px;
 }
 
 .img-icon {
-    width: 3em;
+    width: 30px;
     height: auto;
 }
 
 .rodape-copy {
-    color: white;
-
-    text-align: center;
-
-    font-size: 0.8em;
-    padding-top: 4em;
+    font-size: 14px;
 }
 
 /* tablet */
-
 @media screen and (min-width: 768px) {
     .links-cabecalho {
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
     }
 }
 
 /* desktop */
-
 @media screen and (min-width: 1024px) {   
     header, .links, footer, .rodape {
         display: flex;
@@ -116,8 +116,9 @@ footer {
     }
     
     header, .rodape {
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        flex-direction: row;
     }
     
     /* rodape */
