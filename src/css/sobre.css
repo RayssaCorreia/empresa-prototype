@@ -7,16 +7,16 @@
     --fundador-background-3: rgb(153, 0, 255);
 }
 
-body, .sobre, .empresa, .text-empresa, .projetos, .grupo-fundadores, .fundadores, .fundador, .cursos {
+body, #sobre, .empresa, .text-empresa, .projetos, #grupo-fundadores, .fundadores, .fundador, .cursos {
     display: flex;
     flex-direction: column;
 }
 
-.sobre, .grupo-fundadores {
+#sobre, #grupo-fundadores {
     padding: 100px;
 }
 
-.empresa, .text-empresa, .grupo-fundadores, .fundadores, .fundador {
+.empresa, .text-empresa, #grupo-fundadores, .fundadores, .fundador {
     gap: 50px;
 }
 
@@ -44,7 +44,7 @@ h2, h3, .text-empresa {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .grupo-projetos {
@@ -52,7 +52,7 @@ h2 {
 }
 
 /* fundadores */
-.grupo-fundadores {
+#grupo-fundadores {
     align-items: center;
 }
 
@@ -130,9 +130,9 @@ h3 {
 
 /* desktop */
 @media screen and (min-width: 1024px) {
-    .sobre {
+    #sobre {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .grupo-projetos, .projetos {

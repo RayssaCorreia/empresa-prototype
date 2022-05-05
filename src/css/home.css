@@ -1,9 +1,9 @@
-.principal {
-    background: url(../img/principal-mobile.png);
+#principal {
+    background: url(../img/principal.png);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: 100% auto;
 
-    padding: 160px 0;
+    padding: 15% 0;
 }
 
 .text-principal {
@@ -17,10 +17,17 @@
 
 /* desktop */
 @media screen and (min-width: 1024px) {
-    .principal {
+    #principal {
         background: linear-gradient(rgba(0, 0, 0, 0.374), rgba(0, 0, 0, 0.367)), url(../img/principal.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        height: 0;
+        
         color: rgb(255, 255, 255);
 
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
 
@@ -29,10 +36,10 @@
     }
 
     h2 {
-        font-size: 3em;
+        font-size: 50px;
     }
 
     h3 {
-        font-size: 2.5em;
+        font-size: 38px;
     }
 }
