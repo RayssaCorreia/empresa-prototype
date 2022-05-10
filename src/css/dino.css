@@ -5,14 +5,16 @@
  }
  #Conteiner_inicial{
      width: 100%;
-     height: 80vh;
+     height: 50vh;
      display: flex;
      text-align:center;/* alinhamento do centro */
      align-items: center;
+    
  }
  .Bloco_1{
-     width: 50%;
+     width: 40%;
      height: auto;
+    
  }
  .Bloco_2{
     width: 50%;
@@ -39,5 +41,46 @@
     weight:400; /* gramadura da letra */
     /* letter-spacing: 2px; */
     line-height: 28px;/* entre linhas */
+
+}
+ #Conteiner_meio {
+    width: 100%; /*largura */
+    height: 50vh;/*altura*/
+    display: flex;/*posicionamento*/
+    /* background-color: black; */
+    justify-content:center; /* posiciona no centro*/
+    gap: 200px;
+    align-items: center;
+    
+  
+}
+.Bloco_3 h3{
+    font-size:35px;
+    width: 100%;
+    height: auto;
+    font-family: 'Lobster', cursive;
+    weight:500; 
+    display: flex;
+    text-align:center;/* alinhamento do centro */
+    align-items: center;
+    justify-content: center;
+    
+} 
+.Bloco_3 ol{
+    list-style-type: disc;/* #Conteiner_meio h3*/{
+    line-height: 28px;/* entre linhas */
+    width: 100%;
+    height: auto;
+    text-align:center;
+   
+    
+} 
+h3{
+    font-family: 'Lobster', cursive;
+    
+}
+.Bloco_3{
+  display: flex;
+  justify-content: flex-end;
 
 }
