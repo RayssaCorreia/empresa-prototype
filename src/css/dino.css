@@ -16,8 +16,9 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 30px;
     /* tamanho da letra */
+    margin-bottom: 32px;
 }
 
 p,
@@ -52,7 +53,7 @@ li {
 #Conteiner_Video {
     width: 100%;
     /* largura */
-    height: 70vh;
+    height: 83vh;
     /* altura */
     display: flex;
     text-align: center;
