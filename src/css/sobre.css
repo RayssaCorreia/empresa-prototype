@@ -17,7 +17,7 @@ body, #sobre, .empresa, .text-empresa, .projetos, #grupo-fundadores, .fundadores
 }
 
 .empresa, .text-empresa, #grupo-fundadores, .fundadores, .fundador {
-    gap: 50px;
+    gap: 80px;
 }
 
 .img-empresa, .fundador {
@@ -39,7 +39,7 @@ body, #sobre, .empresa, .text-empresa, .projetos, #grupo-fundadores, .fundadores
     font-size: 18px;
 }
 
-h2, h3, .text-empresa {
+h2, h3, h4,  .text-empresa {
     text-align: center;
 }
 
