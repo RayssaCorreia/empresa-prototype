@@ -97,6 +97,8 @@ footer {
 }
 
 .rodape-copy {
+    color: var(--link-color-1);
+    
     font-size: 14px;
 }
 

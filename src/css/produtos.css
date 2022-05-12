@@ -1,16 +1,24 @@
+:root {
+    /* fonts */
+    --main-font: 'Robolo', sans-serif;
+    --logo-font: 'Righteous', sans-serif;
+    --title-font: 'Lobster', cursive;
+}
+
 body{
-    font-family: 'Robolo', sans-serif;
-    background-color: #d4c9c9;
-} 
+    font-family: var(--main-font);
+}
+
+h2, h3 {
+    font-family: var(--title-font);
+}
+
 h2 a{
     text-decoration: none;
-    font-family: 'Oleo Script', cursive;
-    font-family: 'Radio Canada', sans-serif;
-    text-decoration: none;
+
     color: #1a1919;
-    font-family: 'Oleo Script';
-    
 }
+
 h2{
     text-align:center;
     font-size: 60px;
