@@ -16,8 +16,9 @@ h2 {
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 30px;
     /* tamanho da letra */
+    margin-bottom: 20px;
 }
 
 .text,
@@ -48,25 +49,42 @@ li {
 }
 
 #Conteiner_inicial,
-#conteiner_seg,
 #Conteiner_Video {
-    width: 100%;
+    width: 100vw;
     /* largura */
-    height: 70vh;
+    height: 86vh;
     /* altura */
-    display: flex;
+    display: flex; 
     text-align: center;
     /* alinha o texto no centro */
     align-items: center;
 }
-
+#conteiner_seg{
+    display: inline;
+    text-align: center;
+    /* alinha o texto no centro */
+    align-items: center;
+}
 #Conteiner_Video {
     justify-content: center;
 }
 
-.Bloco_1,
-.Bloco_2 {
+.Bloco_1{
     width: 50%;
+    /* largura */
+    height: auto;
+    /* altura */
+
+}
+.Bloco_2 {
+    width: 100%;
+    /* largura */
+    height: auto;
+    /* altura */
+    margin-bottom:200px;/* espaço entre*/
+}
+.Bloco_21{
+    width: 100%;
     /* largura */
     height: auto;
     /* altura */
@@ -84,4 +102,19 @@ ol li:before {
     /* determina o tempo de transição para volta do estado normal font-size: 40px; */
     cursor: pointer;
 }
+.Bloco_3{
+    width: 100%;
+    /* largura */
+    height: 86vh;
+    /* altura */
+
+}
+.Card{
+    border: 10px solid #e2060631; 
+    width: 150px;
+    /* largura */
+    height: 300px;
+    /* altura */
+}
+
 
