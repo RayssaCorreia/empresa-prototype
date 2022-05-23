@@ -110,7 +110,8 @@ ol li:before {
 
 }
 .Card{
-    border: 10px solid #e2060631; 
+    border: 10
+    px solid #e2060631; 
     width: 150px;
     /* largura */
     height: 300px;
