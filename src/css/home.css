@@ -5,73 +5,73 @@
     --title-font: 'Lobster', cursive;
 }
 
-#principal {
-    background: url(../img/principal.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-    padding: 15% 0;
+.img-principal {
+    width: 100%;
+    height: auto;
 }
 
-h2 {
-    font-size: 50px;
+.text-principal, .img-tablet {
+    display: none;
 }
 
-h3 {
-    font-size: 38px;
+#destaque, .destaque, .destaque-semana, .destaque-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-h4, h5 {
+#destaque {
+    padding: 100px;
+
+    gap: 80px;
+}
+
+h2, h5 {
     text-align: center;
 }
 
-h4 {
-    font-family: var(--title-font);
-
+h2 {
     font-size: 40px;
 }
 
 h5 {
+    font-family: var(--title-font);
+
     font-size: 22px;
-
-    text-transform: uppercase;
 }
 
-#mvv, .mvv, .missao, .visao, .valores {
-    display: flex;
-}
-
-.text-principal {
-    display: none;
-}
-
-#mvv {
-    padding: 100px;
-
-    flex-direction: column;
+.destaque, .destaque-semana {
     gap: 80px;
 }
 
-.mvv {
-    justify-content: space-around;
-}
+.destaque-semana {
+    background: var(--bloco-background);
 
-.missao, .visao, .valores {
     padding: 30px;
     width: 15em;
 
-    flex-direction: column;
     align-items: center;
 
+    border: 1px solid #ffffff;
     border-radius: 30px;
     box-shadow: 2px 2px 8px 5px #00000033;
     transition: .5s;
+}
+
+.destaque-semana, .destaque-link {
+    color: var(--main-font);
+    text-decoration: none;
 
     gap: 30px;
 }
 
-.img-mvv {
-    width: 150px;
+.destaque-semana:hover {
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+
+.img-destaque {
+    width: 200px;
     height: auto;
 
     border-radius: 100px;
@@ -79,14 +79,20 @@ h5 {
 
 /* tablet */
 @media screen and (min-width: 768px) {
-    
+    .img-tablet {
+        display: inline-block;
+    }
+
+    .img-mobile {
+        display: none;
+    }
 }
 
 /* desktop */
 @media screen and (min-width: 1024px) {
     #principal {
-        background: linear-gradient(rgba(0, 0, 0, 0.374), rgba(0, 0, 0, 0.367)), url(../img/principal.png);
-        background-size: 100% 35em;
+        background: url(../img/principal-fundo.png);
+        background-size: 100% auto;
         background-repeat: no-repeat;
 
         border: none;
@@ -96,9 +102,27 @@ h5 {
         display: flex;
         justify-content: center;
         text-align: center;
+
+        padding: 20%;
+    }
+
+    .img-principal {
+        display: none;
     }
 
     .text-principal {
         display: inline-block;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+    
+    h4 {
+        font-size: 38px;
+    }
+
+    .destaque {
+        flex-direction: row;
     }
 }
