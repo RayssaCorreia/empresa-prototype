@@ -1,6 +1,7 @@
 :root {
     /* colors */
     --logo-color: #fff;
+    --header-footer-color: #fff;
     --text-color: #444;
     --link-color-1: #ffffff;
     --cabecalho-rodape-color-1: #000000;
@@ -26,7 +27,7 @@ header, footer {
     gap: 30px;
 }
 
-header, footer, .links, .rodape {
+header, footer, .links, .rodape, .logar {
     display: flex;
 }
 
@@ -53,8 +54,18 @@ header, .rodape, .rodape-links {
     gap: 20px;
 }
 
-h2 {
+/* titles */
+h2, h3 {
     font-family: var(--title-font);
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 22px;
 }
 
 /* cabecalho */
@@ -78,12 +89,38 @@ h1 a {
     gap: 25px;
 }
 
-.link-cabecalho {
+.link-cabecalho, .nickname {
     font-size: 16px;
 }
 
 .link-cabecalho:hover {
     color: rgb(226, 193, 103);
+}
+
+.logar {
+    padding: 10px 15px;
+
+    border: 1px solid #fff;
+    border-radius: 30px;
+
+    align-items: center;
+    gap: 20px;
+}
+
+.nickname {
+    font-family: var(--main-font);
+}
+
+.img-logar {
+    width: 40px;
+    height: auto;
+
+    border-radius: 100px;
+}
+
+.img-principal-logar { /**/
+   width: 400px;
+   height: auto;
 }
 
 /* rodape */
@@ -97,8 +134,8 @@ footer {
 }
 
 .rodape-copy {
-    color: var(--link-color-1);
-    
+    color: var(--header-footer-color);
+
     font-size: 14px;
 }
 

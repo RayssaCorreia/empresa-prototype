@@ -1,22 +1,22 @@
 :root {
     /* colors */
-    --fundador-color: #fff;
-    --fundador-background: rgb(44, 44, 44);
-    --fundador-background-1: rgb(0, 119, 255);
+    --bloco-color: #000;
+    --bloco-background: rgb(255, 255, 255);
+    --fundador-background-1: rgb(0, 225, 255);
     --fundador-background-2: rgb(255, 0, 157);
     --fundador-background-3: rgb(153, 0, 255);
 }
 
-body, #sobre, .empresa, .text-empresa, .projetos, #grupo-fundadores, .fundadores, .fundador, .cursos {
+body, #sobre, .empresa, .text-empresa, .projetos, #fundadores, .fundadores, .fundador, .cursos , #mvv, .mvv, .mvv-obj {
     display: flex;
     flex-direction: column;
 }
 
-#sobre, #grupo-fundadores {
+section {
     padding: 100px;
 }
 
-.empresa, .text-empresa, #grupo-fundadores, .fundadores, .fundador {
+.empresa, .text-empresa, #fundadores, .fundadores, .fundador, #mvv, .mvv {
     gap: 80px;
 }
 
@@ -39,12 +39,8 @@ body, #sobre, .empresa, .text-empresa, .projetos, #grupo-fundadores, .fundadores
     font-size: 18px;
 }
 
-h2, h3, h4,  .text-empresa {
+h2, h3, h4,  .text-empresa,.text {
     text-align: center;
-}
-
-h2 {
-    font-size: 40px;
 }
 
 .grupo-projetos {
@@ -52,12 +48,13 @@ h2 {
 }
 
 /* fundadores */
-#grupo-fundadores {
+#fundadores, #mvv {
     align-items: center;
 }
 
-.fundadores {
-    color: var(--fundador-color);
+.fundadores, .mvv {
+    color: var(--bloco-color);
+    
 }
 
 .img-projeto, .img-fundador {
@@ -67,45 +64,54 @@ h2 {
     border-radius: 100px;
 }
 
-.fundador {
-    background: var(--fundador-background);
+.fundador, .mvv-obj {
+    background: var(--bloco-background);
 
     padding: 30px;
+    width: 15em;
 
+    flex-direction: column;
     align-items: center;
 
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
     transition: .5s;
+
+    gap: 30px;
 }
 
-.fundador:hover {
-    box-shadow: 5px 5px 5px #00000049;
+.fundador:hover, .mvv-obj:hover {
+    border: 1px solid #000000;
     transform: scale(1.1);
 }
 
 .fundador-1:hover {
-    background: linear-gradient(var(--fundador-background), var(--fundador-background-1));
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-1));
 }
 
 .fundador-2:hover {
-    background: linear-gradient(var(--fundador-background), var(--fundador-background-2));
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-2));
 }
 
 .fundador-3:hover {
-    background: linear-gradient(var(--fundador-background), var(--fundador-background-3));
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-3));
 }
 
-h3 {
-    font-size: 22px;
+/* mvv */
+.img-mvv {
+    width: 150px;
+    height: auto;
+
+    border-radius: 100px;
 }
 
-.cursos {
-    font-size: 14px;
-    gap: 12px;
+.valores-text {
+    padding-bottom: 5px;
 }
 
-.curso:before {
-    content: "\1F393  ";
+.valores-text:before {
+    content: "\2605  ";
 }
 
 /* tablet */
@@ -121,7 +127,7 @@ h3 {
         padding: 0 25px;
     }
 
-    .fundadores {
+    .fundadores, .mvv {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -130,6 +136,10 @@ h3 {
 
 /* desktop */
 @media screen and (min-width: 1024px) {
+    .empresa {
+        width: 40%;
+    }
+
     #sobre {
         flex-direction: row;
         justify-content: space-around;
@@ -140,8 +150,8 @@ h3 {
         gap: 20px;
     }
 
-    /* fundadores */
-    .fundadores {
+    /* fundadores e mvv */
+    .fundadores, .mvv {
         flex-direction: row;
         justify-content: space-around;
     }
