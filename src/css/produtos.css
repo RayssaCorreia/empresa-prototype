@@ -1,0 +1,95 @@
+:root {
+    /* fonts */
+    --main-font: 'Robolo', sans-serif;
+    --logo-font: 'Righteous', sans-serif;
+    --title-font: 'Lobster', cursive;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+h2, h3 {
+    font-family: var(--title-font);
+}
+
+h2 a{
+    text-decoration: none;
+
+    color: #1a1919;
+}
+
+h2{
+    text-align:center;
+    font-size: 60px;
+    padding: 75px;
+}
+
+h3{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+
+    padding-bottom: 30px;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;  
+}
+
+br{
+    padding: auto;
+}
+
+#A{
+    font-size: 25px; 
+}
+
+.texto1{
+    width: 50%;
+    height: 200px;
+}
+.img1{
+    width: 50%;
+    height: 200px;
+}
+
+.lado{
+    justify-content:flex-end;
+}
+
+.img2{
+    border-radius: 20px;
+}
+
+#ise{
+    margin-bottom: 150px;
+    
+}
+
+.config{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left:100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+     
+}
+
+
+.botao01{
+    background-color: #373b37; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 35px;
+   }
+
+.container_produtos{
+    width: 99vw;
+}

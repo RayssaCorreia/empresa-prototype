@@ -1,0 +1,148 @@
+:root {
+    /* colors */
+    --fundador-color: #fff;
+    --fundador-background: rgb(44, 44, 44);
+    --fundador-background-1: rgb(0, 119, 255);
+    --fundador-background-2: rgb(255, 0, 157);
+    --fundador-background-3: rgb(153, 0, 255);
+}
+
+body, #sobre, .empresa, .text-empresa, .projetos, #grupo-fundadores, .fundadores, .fundador, .cursos {
+    display: flex;
+    flex-direction: column;
+}
+
+#sobre, #grupo-fundadores {
+    padding: 100px;
+}
+
+.empresa, .text-empresa, #grupo-fundadores, .fundadores, .fundador {
+    gap: 80px;
+}
+
+.img-empresa, .fundador {
+    border-radius: 30px;
+}
+
+/* sobre a empresa */
+.empresa {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-empresa {
+    width: 400px;
+    height: auto;
+}
+
+.text-empresa {
+    font-size: 18px;
+}
+
+h2, h3, h4,  .text-empresa {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.grupo-projetos {
+    display: none;
+}
+
+/* fundadores */
+#grupo-fundadores {
+    align-items: center;
+}
+
+.fundadores {
+    color: var(--fundador-color);
+}
+
+.img-projeto, .img-fundador {
+    width: 150px;
+    height: auto;
+
+    border-radius: 100px;
+}
+
+.fundador {
+    background: var(--fundador-background);
+
+    padding: 30px;
+
+    align-items: center;
+
+    border: 1px solid #000000;
+    transition: .5s;
+}
+
+.fundador:hover {
+    box-shadow: 5px 5px 5px #00000049;
+    transform: scale(1.1);
+}
+
+.fundador-1:hover {
+    background: linear-gradient(var(--fundador-background), var(--fundador-background-1));
+}
+
+.fundador-2:hover {
+    background: linear-gradient(var(--fundador-background), var(--fundador-background-2));
+}
+
+.fundador-3:hover {
+    background: linear-gradient(var(--fundador-background), var(--fundador-background-3));
+}
+
+h3 {
+    font-size: 22px;
+}
+
+.cursos {
+    font-size: 14px;
+    gap: 12px;
+}
+
+.curso:before {
+    content: "\1F393  ";
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .img-empresa {
+        width: 600px;
+        height: auto;
+    }
+
+    .text-empresa {
+        text-align: left;
+
+        padding: 0 25px;
+    }
+
+    .fundadores {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    #sobre {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .grupo-projetos, .projetos {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* fundadores */
+    .fundadores {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

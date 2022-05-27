@@ -1,0 +1,185 @@
+body {
+    background: linear-gradient(#fff,rgb(187, 255, 249));
+}
+
+h2,
+h3 {
+    font-family: 'Lobster', cursive;
+    /* fonte da letra */
+    font-size: 32px;
+    /* tamanho da letra */
+}
+
+h2 {
+    font-size: 32px;
+    /* tamanho da letra */
+}
+
+h3 {
+    font-size: 30px;
+    /* tamanho da letra */
+    margin-bottom: 20px;
+}
+
+.text,
+li {
+    font-size: 18px;
+    /* tamanho da letra */
+    margin: 10px 20px;
+    weight: 400;
+    /* gramadura da letra */
+    /* letter-spacing: 2px; */
+    line-height: 28px;
+    /* entre linhas */
+}
+
+.img-dino {
+    width: 600px;
+    /* largura */
+    height: auto;
+    /* altura */
+}
+
+.img-dino,
+.video {
+    border-radius: 1em;
+    /* borda redonda */
+    box-shadow: 5px 5px 5px #00000031;
+    /* sombra */
+}
+
+#Conteiner_inicial,
+#Conteiner_Video {
+    width: 100vw;
+    /* largura */
+    height: 86vh;
+    /* altura */
+    display: flex; 
+    text-align: center;
+    /* alinha o texto no centro */
+    align-items: center;
+}
+#conteiner_seg{
+    display: inline;
+    text-align: center;
+    /* alinha o texto no centro */
+    align-items: center;
+}
+#Conteiner_Video {
+    justify-content: center;
+    display:flex;
+    align-items: center;
+}
+
+.Bloco_1{
+    width: 50%;
+    /* largura */
+    height: auto;
+    /* altura */
+
+}
+.Bloco_2 {
+    width: 100%;
+    /* largura */
+    height: auto;
+    /* altura */
+    margin-bottom:200px;/* espaço entre*/
+}
+.Bloco_2 {
+    width: 100%;
+    /* largura */
+    height: auto;
+    /* altura */
+}
+
+ol li:before {
+    content: "• ";
+    /* icone dos topicos */
+}
+
+#Conteiner_inicial,
+#conteiner_seg,
+#Conteiner_Video,
+#Circuito_Programa elemento-referenciado {
+    transition: 1s;
+    /* determina o tempo de transição para volta do estado normal font-size: 40px; */
+    cursor: pointer;
+}
+.Bloco_3{
+    width: 100%;
+    /* largura */
+    height: 86vh;
+    /* altura */
+   
+}
+.Codigo{
+    width: 100%;
+    /* largura */
+    padding: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    /* entre linhas */
+    justify-content: center;
+    display: flex;
+    
+
+}
+.codigo_container1 {
+    width: 1100px;
+    background-color:#00000031;
+    display:flex;
+    flex-direction:column;
+    border: 5px solid #00000031;
+    justify-content: center;
+    transition: 1s;
+    /* determina o tempo de transição para volta do estado normal font-size: 40px; */
+    cursor: pointer;
+  
+}
+.codigo1{
+    background-color:#00000031;
+    width: 100%;
+    /* margin: 0 50px 0 50px; */
+}
+.codigo1 p {
+    margin: 25px 50px 25px 50px;
+}
+.codigo_title{
+    text-align: center;
+    width: 100%;
+}
+#Circuito_programa{
+    width: 100vw;
+    /* largura */
+    height: 86vh;
+    /* altura */
+    display: flex; 
+    text-align: center;
+    /* alinha o texto no centro */
+    align-items: center;
+}
+
+.Bloco_4{
+    width: 50%;
+    /* largura */
+    height: auto;
+    /* altura */
+}
+
+.imgCircuitoDino{
+    border-radius: 1em;
+    /* borda redonda */
+    box-shadow: 5px 5px 5px #00000031;
+    /* sombra */
+    width: 500px;
+    /* largura */
+    height: auto;
+    /* altura */
+    
+}
+#Circuito_programa div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE htm1>
+<htm1 lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/dino.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@100&display=swap"
+            rel="stylesheet">
+        <title>Prototype - Smart Dino</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 title="Prototype"><a href="#">Prototype</a></h1>
+            <nav>
+                <ul class="links links-cabecalho">#Conteiner_Video {
+                    justify-content: center;
+                    }
+        </header>
+        <section id="Conteiner_inicial">
+
+            <div class="Bloco_1">
+                <h2>Smart Dino</h2>
+                <img class="img-dino" src="../img/dino.png" alt="padolabs">
+            </div>
+            <div class="Bloco_1">
+                <h3>Como e onde surgiu a ideia Smart Dino?</h3>
+
+                <p class="text">A ideia surgiu de um Projeto, para um evento conhecido como <strong> "Hackathon"
+                    </strong>.
+                    É uma maratona de programação ou maratona de desenvolvimento que nós permite mostrar ideias e
+                    trabalhar em cima delas, a ideia inicial do projeto passado pra nós que fosse um prototype de
+                    um produto a ser usado. Usamos um metodo de demonstração mais descontraido e que se encaixaria
+                    com a nossa ideia de apresentação real e funcional do nosso produto.</p>
+            </div>
+        </section>
+
+        <section id="conteiner_seg">
+            <div class="Bloco_2">
+                <h3>Componentes usados no Projeto:</h3>
+                <div class="Card">
+
+                </div>
+                <ol>
+                    <li>Server Motor</li>
+                    <li>Placa STM32 (Não precisa ser necessariamente essa)</li>
+                    <li>Um Resistor de IDE</li>
+                    <li>Resistor de 10k ohms</li>g
+                </ol>
+            </div>
+
+            <div class="Bloco_2">
+                <h3>Como Funciona:</h3>
+
+                <p class="text">O ideia inicial do nosso produto seria de um prototype do Dino,<br>
+                    que foi feita a simulação a ideia de jogo usando os componentes<br>
+                    poderia ser usado tanto na parte da robotica quando pra parte de<br>
+                    denvolvimento. Mais ele também pode ser usado, como por exemplo,<br>
+                    na parte de produção de vinho, onde faria o processo de metida do<br>
+                    vinho, tendo assim um controle de produção,vendo se está sendo <br>
+                    fiscalizada na medida certado recipiente.
+            </div>
+        </section>
+
+        <section id="Conteiner_Video">
+            <div class="Bloco_3">
+                <h3>Exemplo do prototico em funcionamento: Dino teste!</h3>
+
+
+
+                <iframe class="video" width="700" height="450" src="https://www.youtube.com/embed/0WuNr-V5Mbw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="Codigo">
+            <div class="codigo_container1">
+                <h1 class="codigo_title"> Codigo do Produto!</h1>
+
+                <div class="codigo1">
+                    <p> /* Includes */
+                        <br> #include &quot;main.h&quot;
+                        <br>
+                        <br> /* USER CODE BEGIN Includes */
+                        <br> #include&lt;stdint.h&gt;
+                        <br>
+                        <br> /* USER CODE BEGIN PTD */
+                        <br> uint32_t ldr = 0, timer = 0;
+                        <br> uint8_t flag = 0;
+                        <br>
+                        <br>
+                        <br> /* Private variables ---------------------------------------------------------*/
+                        <br>ADC_HandleTypeDef hadc1;
+                        <br>
+                        <br>
+                        <br>TIM_HandleTypeDef htim2;
+                        <br>/* USER CODE BEGIN 2 */
+                        <br>HAL_TIM_PWM_Start(&amp;htim2, TIM_CHANNEL_2);//inicializa pwm que controla servo;
+                        <br>TIM2-&gt;CCR2 = 65;
+                        <br>
+                        <br>
+                        <br>/* USER CODE BEGIN WHILE */
+                        <br>while (1)
+                        <br>{
+                        <br>//leitura do LDR por ADC;
+                        <br>HAL_ADC_Start(&amp;hadc1);
+                        <br>HAL_ADC_PollForConversion(&amp;hadc1, 1);
+                        <br>ldr = HAL_ADC_GetValue(&amp;hadc1);
+                        <br>
+                        <br>
+                        <br>ADC_HandleTypeDef hadc1;
+                        <br>
+                        <br>TIM_HandleTypeDef .Bloco_5{
+
+                        }htim2;
+                        <br>
+                        <br>//se identificar obstaculo ativa o servo;
+                        <br>if (ldr &gt; 8) {
+                        <br>HAL_GPIO_WritePin(Buz_GPIO_Port, Buz_Pin, GPIO_PIN_SET);
+                        <br>TIM2-&gt;CCR2 = 300;//define a posi&ccedil;&atilde;o do servo;
+                        <br>}else{
+                        <br>HAL_GPIO_WritePin(Buz_GPIO_Port, Buz_Pin, GPIO_PIN_RESET);
+                        <br>TIM2-&gt;CCR2 = 500;//define a posi&ccedil;&atilde;o do servo;
+                        <br>}
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="Circuito_programa">
+            <div>
+                <div class="Bloco_4">
+                    <h2>Smart Dino</h2>
+                    <img class="imgCircuitoDino" src="../img/imgCircuitoDino.png" alt="circuito">
+                </div>
+                <div class="Bloco_5">
+                    <h3>Circuito do Programa</h3>
+
+                    <p class="text">O server motor foi adaptado para que ficasse em uma posição pra quando fosse
+                        precionado
+                        ele fizesse o movimento de pulo precionado o teclado.
+                        O Sensor foi adptado também pra que quando estivesse em movimento ele reconhecesse-se a
+                        luminosidade
+                        da tela e a sim fazer o motor assionar fazendo o movimento.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="rodape">
+                <h1 title="Prototype"><a href="#">Prototype</a></h1>
+                <ul class="links links-social">
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/facebook.png"
+                                alt="Foto do icone do Facebook" title="Facebook"></a></li>
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/instagram.png"
+                                alt="Foto do icone do Instagram" title="Instagram"></a></li>
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/whatsapp.png"
+                                alt="Foto do icone do Whatsapp" title="Whatsapp"></a></li>
+                </ul>
+            </div>
+            <p class="rodape-copy">Prototype &copy; 2019</p>
+        </footer>
+    </body>
+</htm1>
