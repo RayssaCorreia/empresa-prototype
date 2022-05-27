@@ -1,128 +1,57 @@
-:root {
-    /* colors */
-    --logo-color: #fff;
-    --text-color: #444;
-    --link-color-1: #ffffff;
-    --cabecalho-rodape-color-1: #000000;
-    --cabecalho-rodape-color-2: #444;
-    
-    /* fonts */
-    --main-font: 'Robolo', sans-serif;
-    --logo-font: 'Righteous', sans-serif;
-    --title-font: 'Lobster', cursive;
+ol li:before {
+    content: "• ";
 }
 
-body {
-    font-family: var(--main-font);
-    
-    color: var(--text-color);
+.foto{
+    border-radius: 20px;
+    height: 400px;
 }
 
-header, footer {
-    color: var(--logo-color);
-    background: linear-gradient(to right, var(--cabecalho-rodape-color-1), var(--cabecalho-rodape-color-2));
-
-    padding: 30px;
-    gap: 30px;
+.valor{
+    font-size:35px;
 }
-
-header, footer, .links, .rodape {
-    display: flex;
-}
-
-header, footer, .links-cabecalho, .rodape {
-    flex-direction: column;
-}
-
-header, .rodape, .rodape-links {
-    justify-content: space-around;
-    align-items: center;
-}
-
-.links, .rodape-copy {
+.botao01{
+    background-color: #373b37; 
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-}
-
-.link-cabecalho, .social-link {
-    color: var(--link-color-1);
-
     text-decoration: none;
-    transition: .5s;
-}
-.links-cabecalho, .rodape {
-    gap: 20px;
-}
-
-h2 {
-    font-family: var(--title-font);
-}
-
-/* cabecalho */
-header {
-    box-shadow: 5px 5px 5px #00000031;
-}
-
-h1 a {
-    font-family: var(--logo-font);
-
-    color: var(--logo-color);
-
-    font-size: 40px;
-
-    text-decoration: none;
-}
-
-.links {
-    text-transform: uppercase;
-    
-    gap: 25px;
-}
-
-.link-cabecalho {
+    display: inline-block;
     font-size: 16px;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+.foto1 {
+    width: 150px;
+    height: auto;
+    border-radius: 100px;
 }
 
-.link-cabecalho:hover {
-    color: rgb(226, 193, 103);
-}
-
-/* rodape */
-footer {
-    gap: 30px;
-}
-
-.img-icon {
+.icone {
     width: 30px;
     height: auto;
 }
-
-.rodape-copy {
-    font-size: 14px;
+section {
+    padding: 100px;
 }
 
-/* tablet */
-@media screen and (min-width: 768px) {
-    .links-cabecalho {
-        flex-direction: row;
-        justify-content: center;
-    }
+.fotos {
+    display: flex;
+    gap: 40px;
 }
 
-/* desktop */
-@media screen and (min-width: 1024px) {   
-    header, .links, footer, .rodape {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    header, .rodape {
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-    }
-    
-    /* rodape */
-    footer {
-        flex-direction: column;
-    }
+.produto{
+    padding-top: 60px;
+    display: flex;
+    padding-right: 200px;
+}
+
+.texto{
+    padding-left: 100px;
+}
+
+.local{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
 }
