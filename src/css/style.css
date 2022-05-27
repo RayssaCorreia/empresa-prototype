@@ -57,10 +57,6 @@ h2 {
     font-family: var(--title-font);
 }
 
-section {
-    padding: 100px;
-}
-
 /* cabecalho */
 header {
     box-shadow: 5px 5px 5px #00000031;
