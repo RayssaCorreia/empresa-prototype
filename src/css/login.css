@@ -36,7 +36,7 @@ h2 {
 .cadastro-obj, .login-obj {
     background: white;
 
-    padding: 40px;
+    padding: 40px 80px;
     width: 15em;
 
     align-items: center;
@@ -78,12 +78,6 @@ input {
 }
 
 .reset:hover {
-    color: red;
-    background-color: rgb(255, 187, 187);
-    border-color: red;
-}
-
-.reset:active {
     color: white;
     background-color: red;
     border-color: white;
@@ -94,12 +88,6 @@ input {
 }
 
 .enviar:hover {
-    color: green;
-    background-color: rgb(165, 255, 157);
-    border-color: green;
-}
-
-.enviar:active {
     color: white;
     background-color: green;
     border-color: white;
