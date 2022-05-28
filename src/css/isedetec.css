@@ -74,7 +74,7 @@ section {
     transition: .5s;
     gap: 30px;
 }
-.texto:hover{
+.texto:hover, .componente2{
     border: 1px solid #000000;
     transform: scale(1.1);
 }
@@ -164,4 +164,8 @@ section {
     height: 250px;
     border-radius: 20px;
     border: 1px solid #ffffff;
+}
+.comentarios{
+    align-items: center;
+    justify-content: center;
 }
