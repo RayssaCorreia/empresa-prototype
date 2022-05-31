@@ -51,6 +51,7 @@ br{
 .img1{
     width: 50%;
     height: 200px;
+    border-radius: 20px;
 }
 
 .lado{
