@@ -1,3 +1,4 @@
+
 ol li:before {
     content: "• ";
 }
@@ -84,7 +85,11 @@ section {
     gap: 100px;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
 }
+
 
 .A{
     padding-bottom: 2px;
@@ -109,6 +114,7 @@ section {
 
 .B{
     padding-bottom: 15px;
+    
 }
 
 .C{
@@ -168,4 +174,25 @@ section {
 .comentarios{
     align-items: center;
     justify-content: center;
+}
+#botao{
+    background-color: #373b37; 
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+#fname{
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.estrelas input[type=radio] {
+    display: none;
+  }
+
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
 }
