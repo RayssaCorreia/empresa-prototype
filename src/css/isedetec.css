@@ -1,0 +1,198 @@
+
+ol li:before {
+    content: "• ";
+}
+
+ol li{
+    padding: 5px;
+}
+
+.foto{
+    border-radius: 20px;
+    height: 400px;
+}
+
+.valor{
+    font-size:35px;
+}
+.botao01{
+    background-color: #373b37; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 25px;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.foto1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #ffffff;
+}
+
+.icone {
+    width: 30px;
+    height: auto;
+}
+section {
+    padding: 100px;
+}
+
+.fotos {
+    display: flex;
+    gap: 40px;
+  
+}
+.foto:hover{
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+
+.produto{
+    padding-top: 100px;
+    display: flex;
+
+    gap: 100px;
+    justify-content: center;
+}
+
+.texto, .texto2{
+    background: var(--bloco-background);
+    padding: 25px;
+    width: 15em;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    transition: .5s;
+    gap: 30px;
+}
+.texto:hover, .componente2{
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+
+.local{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+}
+
+
+.A{
+    padding-bottom: 2px;
+}
+
+.valor{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cartao, .caminhao, .sacola{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.cosii{
+    padding-bottom: 15px;
+    padding-top: 35px;
+}
+
+.B{
+    padding-bottom: 15px;
+    
+}
+
+.C{
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+
+.text, .img, .caixa{
+    background: var(--bloco-background);
+    padding: 20px;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    transition: .5s;
+    gap: 30px;
+    align-items: center;
+}
+.img{
+    margin-right: 35px;
+}
+.text:hover, .texto2:hover{
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+.img:hover, .foto1:hover{
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+
+.hackathon {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.funcionamento{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.component{
+    padding-bottom:40px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.componente2{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+}
+.comentarios{
+    align-items: center;
+    justify-content: center;
+}
+#botao{
+    background-color: #373b37; 
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+#fname{
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.estrelas input[type=radio] {
+    display: none;
+  }
+
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}

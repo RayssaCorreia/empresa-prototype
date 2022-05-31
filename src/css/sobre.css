@@ -1,0 +1,158 @@
+:root {
+    /* colors */
+    --bloco-color: #000;
+    --bloco-background: rgb(255, 255, 255);
+    --fundador-background-1: rgb(0, 225, 255);
+    --fundador-background-2: rgb(255, 0, 157);
+    --fundador-background-3: rgb(153, 0, 255);
+}
+
+body, #sobre, .empresa, .text-empresa, .projetos, #fundadores, .fundadores, .fundador, .cursos , #mvv, .mvv, .mvv-obj {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 100px;
+}
+
+.empresa, .text-empresa, #fundadores, .fundadores, .fundador, #mvv, .mvv {
+    gap: 80px;
+}
+
+.img-empresa, .fundador {
+    border-radius: 30px;
+}
+
+/* sobre a empresa */
+.empresa {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-empresa {
+    width: 400px;
+    height: auto;
+}
+
+.text-empresa {
+    font-size: 18px;
+}
+
+h2, h3, h4,  .text-empresa,.text {
+    text-align: center;
+}
+
+.grupo-projetos {
+    display: none;
+}
+
+/* fundadores */
+#fundadores, #mvv {
+    align-items: center;
+}
+
+.fundadores, .mvv {
+    color: var(--bloco-color);
+    
+}
+
+.img-projeto, .img-fundador {
+    width: 150px;
+    height: auto;
+
+    border-radius: 100px;
+}
+
+.fundador, .mvv-obj {
+    background: var(--bloco-background);
+
+    padding: 30px;
+    width: 15em;
+
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    transition: .5s;
+
+    gap: 30px;
+}
+
+.fundador:hover, .mvv-obj:hover {
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+
+.fundador-1:hover {
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-1));
+}
+
+.fundador-2:hover {
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-2));
+}
+
+.fundador-3:hover {
+    background: linear-gradient(var(--bloco-background), var(--fundador-background-3));
+}
+
+/* mvv */
+.img-mvv {
+    width: 150px;
+    height: auto;
+
+    border-radius: 100px;
+}
+
+.valores-text {
+    padding-bottom: 5px;
+}
+
+.valores-text:before {
+    content: "\2605  ";
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .img-empresa {
+        width: 600px;
+        height: auto;
+    }
+
+    .text-empresa {
+        text-align: left;
+
+        padding: 0 25px;
+    }
+
+    .fundadores, .mvv {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .empresa {
+        width: 40%;
+    }
+
+    #sobre {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .grupo-projetos, .projetos {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* fundadores e mvv */
+    .fundadores, .mvv {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

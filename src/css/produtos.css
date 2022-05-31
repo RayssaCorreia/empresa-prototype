@@ -1,0 +1,69 @@
+:root {
+    /* fonts */
+    --main-font: 'Robolo', sans-serif;
+    --logo-font: 'Righteous', sans-serif;
+    --title-font: 'Lobster', cursive;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+section {
+    padding: 100px;
+}
+
+h2, h3 {
+    font-family: var(--title-font);
+}
+
+h2 a{
+    text-decoration: none;
+
+    color: #1a1919;
+}
+
+h2{
+    text-align:center;
+    font-size: 60px;
+    padding: 75px;
+}
+
+h3{
+    padding-bottom: 30px;
+}
+
+br{
+    padding: auto;
+}
+
+.lado{
+    justify-content:flex-end;
+}
+
+.img2{
+    border-radius: 20px;
+}
+
+.config{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.botao01{
+    background-color: #373b37; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 35px;
+   }
+
+.container_produtos{
+    width: 99vw;
+}

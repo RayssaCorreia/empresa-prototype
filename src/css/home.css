@@ -1,0 +1,128 @@
+:root {
+    /* fonts */
+    --main-font: 'Robolo', sans-serif;
+    --logo-font: 'Righteous', sans-serif;
+    --title-font: 'Lobster', cursive;
+}
+
+.img-principal {
+    width: 100%;
+    height: auto;
+}
+
+.text-principal, .img-tablet {
+    display: none;
+}
+
+#destaque, .destaque, .destaque-semana, .destaque-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#destaque {
+    padding: 100px;
+
+    gap: 80px;
+}
+
+h2, h5 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h5 {
+    font-family: var(--title-font);
+
+    font-size: 22px;
+}
+
+.destaque, .destaque-semana {
+    gap: 80px;
+}
+
+.destaque-semana {
+    background: var(--bloco-background);
+
+    padding: 30px;
+    width: 15em;
+
+    align-items: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    transition: .5s;
+}
+
+.destaque-semana, .destaque-link {
+    color: var(--main-font);
+    text-decoration: none;
+
+    gap: 30px;
+}
+
+.destaque-semana:hover {
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+
+.img-destaque {
+    width: 200px;
+    height: auto;
+
+    border-radius: 100px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .img-tablet {
+        display: inline-block;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    #principal {
+        background: url(../img/principal-fundo.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        border: none;
+        
+        color: rgb(255, 255, 255);
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        padding: 20%;
+    }
+
+    .img-principal {
+        display: none;
+    }
+
+    .text-principal {
+        display: inline-block;
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+    
+    h4 {
+        font-size: 38px;
+    }
+
+    .destaque {
+        flex-direction: row;
+    }
+}
