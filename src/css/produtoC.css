@@ -1,0 +1,31 @@
+section {
+    padding: 100px;
+}
+
+#Especificacoes ,.h2 {
+    display: flex; /*pra deixar o itens um do lado do outro*/
+   
+    text-align: center;
+    /* alinha o texto no centro */
+  
+}
+.conteudo{
+    display: flex;
+    /* gap: 1.1px; */
+   
+}
+.produto_1{
+   
+}
+.hr{
+    margin-block-end: 5.5em, 5.5em
+    width: 10vw;
+    /* largura */
+    height:20px;
+    /* altura */
+}
+h2 {
+    font-size: 38px;
+    /* tamanho da letra */
+}
+

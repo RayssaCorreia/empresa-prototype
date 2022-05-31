@@ -2,11 +2,20 @@
 <htm1 lang="pt-br">
 
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compartible" content="IE= edge">
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/produto.css">
+        <link rel="stylesheet" href="../css/produtoC.css">
+        <link href="https://fonts.googleapis.com/css2?family=Robolo&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap"
+            rel="stylesheet">
         <title>Prototype - Aproveite e leve também</title>
     </head>
 
@@ -14,140 +23,141 @@
         <header>
             <h1 title="Prototype"><a href="#">Prototype</a></h1>
         </header>
-        <section id="titulo">
-            <h1>Minha cesta</h1>
+        <section id="Especificacoes">
+            <hr />
+            <div class="produto_1">
+                <hr />
+                <h2>Produto</h2>
+                <hr />
+                <br>
+                <div class="conteudo">
+                    <img class="img-dino" src="../im/dino.png" alt="padolabs">
+                    <div>
+                        <p>
+                            nome e descrição do produto
+                            <hr />
+                            caracteristicas,tamanho,cor
+                            <hr />
+                            Entragas para todo o pais
+                            <hr />
+                            a nossa loja
+                            <hr />
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <hr />
+                <div class="botoon_1">
+                        <hr />
+                        <h2>Quantidade</h2>
+                        <hr />
+                        <br>
+                        <hr />
+                    <div class="conteudo_2">
+                        <div>
+                                <br>
+                                <button type="button" onclick="alert('Hello world!')">- 1 +</button>
+                            <p>
+                                
+                                <br>
+                                <br>
+                                <br>
+                                <hr>remover</hr>
+                                <hr />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <hr />
+            <div class="entrega_1">
+                <hr />
+                <h2>Entrega</h2>
+                <div class="conteudo_3">
+                     <div>
+                         <p>
+                             <hr>Valor antes do disconto<hr>
+                               aproveite e leve também<hr>
+                               valor depois do disconto,Atual!<hr>
+                               quanto maximo de pclm<hr>
+                         </p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="preco_1">
+                <hr />
+                 <h2>Preço</h2>
+                <div class="conteudo_4">
+                    <div>
+                        <p>
+                            <hr>calcule o frete e prazo<hr>
+                                valor depois do disconto,Atual!<hr>
+                        </p>
+                    </div>
+                 </div>
+            </div>
+            <hr />
+            <div class="BOT-ok">
+                <hr />
+                            <h2>Confirmar Pedido</h2>
+                <hr />
+                <div class="conteudo_5">
+                   <div>
+                            <br>
+                            <button type="button" onclick="alert('Hello world!')">OK</button>
+                   </div>
+                </div>
+            </div>
         </section>
-        <selection id="Descricao">
-            <div class="D">
-                <h3>produto</h3>
-            </div>
-            <div class="e">
-                <h3>quantidade</h3>
-            </div>
-            <div class="s">
-                <h3>entrega</h3>
-            </div>
-            <div class="c">
-                <h3>preço</h3>
-            </div>
 
-        </selection>
-        <selections id="Especification_Prod">
-            <div class="imgProduto1">
-                <img class="img-dino" src="../img/dino.png" alt="padolabs">
-            </div>
-            <div class="a">
-                <p>nome e descrição do produto</p>
-            </div>
-            <div class="b">
-                <p>caracteristicas,tamanho,cor</p>
-            </div>
-            <div class="c">
-                <p>Entragas para todo o pais</p>
-            </div>
-            <div class="d">
-                <p>a nossa loja</p>
-            </div>
-            <div class="e">
-                <button data-cy="decrease-product-quantity" class="sc-ljWVPX dGpgDO">…</button>
-                <input min="1" type="tel" name="LineQuantity" data-cy="line-quantity-input" class="sc-isYOly jpAhgp"
-                    value="1">
-                <button data-cy="increase-product-quantity" class="sc-ljWVPX dGpgDO">…</button>
-            </div>
-            <div class="f">
-                <p>remover</p>
-            </div>
-            <div class="g">
-                <p>Valor antes do disconto</p>
-            </div>selection id ="MaisItens">
-            <div class ="MaisItens1">
-                <p>aproveite e leve também</p>
-            </div>
-            <div class="h">
-                <p>valor depois do disconto,Atual!</p>
-            </div>
-            <div class="i">
-                <p>quanto maximo de pclm</p>
-            </div>
-            </section>
-        <selections id="tomaDoValorFinal">
-        <div class= "soma">
-            <p>calcule o frete e prazo</p>
-        </div>
-        <div class="s">
-            <p>valor depois do disconto,Atual!</p>
-        </div>
-        <div class="o">
-            <button type="button" onclick="alert('Hello world!')"></button>
 
-        </div>
-        <div class="BOT-ok">
-            <button type="button" onclick="alert('Hello world!')">ok</button>
-        </div>
-   
 
-        </selections>
-            <selection id="titulo2">
-                <div class="titulo_2"
-                <h1>Resumo do pedido</h1>
-                <div class="R">
-                    <p>quantidade do produto</p>
-                </div>
-                <div class="e ">
-                    <p>valor</p>
-                </div>
-                <div class="s">
-                    <p>frete</p>
-                </div>
-                <div class="u">
-                    <p>valor do frete</p>
-                </div>
-            </selection>
-            <selection id="titulo3">
-                <div class="final_total">
+
+
+
+        <section id="ResumoDoPedido">
+            <h2>Resumo do pedido</h2>
+            <div class="ResumoDoPedido_1">
+                <p>quantidade do produto</p>
+                <p>valor</p>
+                <p>frete</p>
+                <p>valor do frete</p>
+            </div>
+        </section>
+        <section id="finalTotal">
+            <div class="finalTotal_1">
                 <h1>Total</h1>
+                <p>valor final</p>
+                <p>cartao x</p>
+                <p>ou ate x no cartao</p>
+                <p>formas de pagamento</p>
             </div>
-                <div class="f">
-                    <p>valor final</p>
-                </div>
-                <div class="">
-                    <p>cartao x</p>
-                </div>
-                <div class="T">
-                    <p>ou ate x no cartao</p>
-                </div>
-                <div class="T">
-                    <p>formas de pagamento</p>
-                </div>
-                </div>
-            </selection>
-        <selection id="botoon_2">
-        <div id="botao_2"> 
-            <button type="button" onclick="alert('Hello world!')">Continuar</button>
-        </div>
-        <div class="b">
-            <p>adicionar mais produtos</p>
-        </div>
-        <div class="o">
-            <p>possui cupom ou vale? voce poderá usá-los na etapa de pagamento.</p>
-        </div>
-        </selection>
 
-        </selections>
-            </selection>
-            <footer>
-                <div class="rodape">
-                    <h1 title="Prototype"><a href="#">Prototype</a></h1>
-                    <ul class="links links-social">
-                        <li><a class="social-link" href="#"><img class="img-icon" src="../img/facebook.png"
-                                    alt="Foto do icone do Facebook" title="Facebook"></a></li>
-                        <li><a class="social-link" href="#"><img class="img-icon" src="../img/instagram.png"
-                                    alt="Foto do icone do Instagram" title="Instagram"></a></li>
-                        <li><a class="social-link" href="#"><img class="img-icon" src="../img/whatsapp.png"
-                                    alt="Foto do icone do Whatsapp" title="Whatsapp"></a></li>
-                    </ul>
-                </div>
-                <p class="rodape-copy">Prototype &copy; 2019</p>
-            </footer>
+            <div class="botao_2">
+                <h1>Finalização da Compra </h1>
+                <button type="button" onclick="alert('Hello world!')">Continuar</button>
+            </div>
+            <div class="botao2-2">
+                <p>adicionar mais produtos</p>
+                <p>possui cupom ou vale? voce poderá usá-los na etapa de pagamento.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="rodape">
+                <h1 title="Prototype"><a href="#">Prototype</a></h1>
+                <ul class="links links-social">
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/facebook.png"
+                                alt="Foto do icone do Facebook" title="Facebook"></a></li>
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/instagram.png"
+                                alt="Foto do icone do Instagram" title="Instagram"></a></li>
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/whatsapp.png"
+                                alt="Foto do icone do Whatsapp" title="Whatsapp"></a></li>
+                </ul>
+            </div>
+            <p class="rodape-copy">Prototype &copy; 2019</p>
+        </footer>
     </body>
 </htm1>
+--
