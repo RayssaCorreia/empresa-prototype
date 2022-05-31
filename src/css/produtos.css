@@ -9,6 +9,10 @@ body{
     font-family: var(--main-font);
 }
 
+section {
+    padding: 100px;
+}
+
 h2, h3 {
     font-family: var(--title-font);
 }
@@ -26,32 +30,11 @@ h2{
 }
 
 h3{
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-
     padding-bottom: 30px;
-}
-p{
-    color: rgb(0, 0, 0);
-    font-size: 25px;  
 }
 
 br{
     padding: auto;
-}
-
-#A{
-    font-size: 25px; 
-}
-
-.texto1{
-    width: 50%;
-    height: 200px;
-}
-.img1{
-    width: 50%;
-    height: 200px;
-    border-radius: 20px;
 }
 
 .lado{
@@ -62,20 +45,10 @@ br{
     border-radius: 20px;
 }
 
-#ise{
-    margin-bottom: 150px;
-    
-}
-
 .config{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
-    padding-left:100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-     
 }
 
 
