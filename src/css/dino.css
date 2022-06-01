@@ -21,8 +21,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.text,
-li {
+.text{
     font-size: 18px;
     /* tamanho da letra */
     margin: 10px 20px;
@@ -50,10 +49,8 @@ li {
 
 #Conteiner_inicial,
 #Conteiner_Video {
-    width: 100vw;
-    /* largura */
-    height: 86vh;
-    /* altura */
+
+    padding: 100px;
     display: flex; 
     text-align: center;
     /* alinha o texto no centro */
@@ -72,25 +69,9 @@ li {
     align-items: center;
 }
 
-.Bloco_1{
-    width: 50%;
-    /* largura */
-    height: auto;
-    /* altura */
+.Bloco_1, .Bloco_3, .Bloco_2{
+   padding: 100px;
 
-}
-.Bloco_2 {
-    width: 100%;
-    /* largura */
-    height: auto;
-    /* altura */
-    margin-bottom:200px;/* espaço entre*/
-}
-.Bloco_2 {
-    width: 100%;
-    /* largura */
-    height: auto;
-    /* altura */
 }
 
 ol li:before {
@@ -106,17 +87,8 @@ ol li:before {
     /* determina o tempo de transição para volta do estado normal font-size: 40px; */
     cursor: pointer;
 }
-.Bloco_3{
-    width: 100%;
-    /* largura */
-    height: 86vh;
-    /* altura */
-   
-}
 .Codigo{
-    width: 100%;
-    /* largura */
-    padding: 30px;
+    padding: 100px;
     font-size: 18px;
     line-height: 28px;
     /* entre linhas */
@@ -126,7 +98,7 @@ ol li:before {
 
 }
 .codigo_container1 {
-    width: 1100px;
+ 
     background-color:#00000031;
     display:flex;
     flex-direction:column;
@@ -150,26 +122,13 @@ ol li:before {
     width: 100%;
 }
 #Circuito_programa{
-   
+   padding: 100px;
     display: flex; 
     text-align: center;
     /* alinha o texto no centro */
     align-items: center;
     justify-content: center;
-}
-
-.Bloco_4 , div {
-    width: 50%;
-    /* largura */
-    height: auto;
-    /* altura */
-}
-.Bloco_5 , div {
-    width: 50%;
-    /* largura */
-    height: auto;
-    /* altura */
-
+   
 }
 
 
@@ -181,24 +140,13 @@ ol li:before {
 }
 
 #Circuito_programa{
-    width: 100vw;
-    /* largura */
-    height: 86vh;
-    /* altura */
     display: flex; 
     text-align: center;
     /* alinha o texto no centro */
-    /* align-items: center; */
-    padding:100px;
+    justify-content: space-around;/*um espaço entre*/
+    padding: 100px;
 }
-
-.Bloco_4 ,div{
-    width: 50%;
-    /* largura */
-    height: auto;
-    /* altura */
-}
-.Bloco_5 ,div{
+.Bloco_5 {
     width: 50%;
     /* largura */
     height: auto;
