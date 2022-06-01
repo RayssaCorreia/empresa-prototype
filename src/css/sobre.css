@@ -115,7 +115,7 @@ h2, h3, h4,  .text-empresa,.text {
 }
 
 /* tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     .img-empresa {
         width: 600px;
         height: auto;
