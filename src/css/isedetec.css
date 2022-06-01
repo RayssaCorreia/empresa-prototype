@@ -37,6 +37,10 @@ ol li{
     border: 1px solid #ffffff;
 }
 
+#bla:hover{
+    transform: scale(1);
+}
+
 .icone {
     width: 30px;
     height: auto;
@@ -191,7 +195,7 @@ section {
 
   .estrelas label i.fa:before {
     content:'\f005';
-    color: #FC0;
+    color: rgb(255, 230, 0);
   }
   .estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #CCC;
