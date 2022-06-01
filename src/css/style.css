@@ -51,6 +51,10 @@ header, .rodape, .rodape-links {
     transition: .5s;
 }
 
+.links-cabecalho {
+    flex-direction: column;
+}
+
 .links-cabecalho, .rodape {
     gap: 20px;
 }
