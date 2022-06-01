@@ -6,7 +6,7 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/produtoC.css">
+        <link rel="stylesheet" href="../css/carrinho.css">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
         <title>Carrinho - Prototype</title>
     </head>
@@ -28,19 +28,13 @@
                 </ul>
             </nav>
         </header>
-        <section id="Especificacoes">
+        <section id="dino">
             <table>
-                <tr class="titulos">
-                    <td class="titulo"><h3>Produto</h3></td>
-                    <td class="titulo"><h3>Quantidade</h3></td>                    
-                    <td class="titulo"><h3>Entrega</h3></td>
-                    <td class="titulo"><h3>Preço</h3></td>
-                    <td class="titulo"><h3>Confirmar Pedido</h3></td>
-                </tr>
-                <tr>
+                <tr class="objetos">
                     <td class="conteudo">
+                        <h3>Produto</h3>
                         <div class="descricao">
-                            <img class="img-dino" src="../im/dino.png" alt="padolabs">
+                            <img class="img-dino" src="../img/dino.png" alt="padolabs">
                             <div class="texto">
                                 <p>nome</p>
                                 <p>descrição do produto</p>
@@ -49,28 +43,75 @@
                         </div>
                     </td>
                     <td class="botoes">
+                        <h3>Quantidade</h3>
                         <button type="button" onclick="alert('Hello world!')">- 1 +</button>
                         <input class="reset" type="reset" value="Redefinir">
                     </td>
                     <td class="conteudo">
+                        <h3>Entrega</h3>
                         <div class="texto">
-                            <p>Valor antes do disconto</p>
+                            <p>Valor antes do desconto</p>
                             <p>Aproveite e leve também</p>
-                            <p>Valor depois do disconto, Atual!</p>
+                            <p>Valor depois do desconto, Atual!</p>
                             <p>Quanto maximo de pclm</p>
                        </div>
                     </td>
                     <td class="conteudo">
+                        <h3>Preço</h3>
                         <div class="texto">
                             <p>Calcule o frete e prazo</p>
-                            <p>Valor depois do disconto, Atual!</p>
+                            <p>Valor depois do desconto, Atual!</p>
                         </div>
                     </td>
                     <td class="conteudo">
-                        <button type="button" onclick="alert('Hello world!')">OK</button>
+                        <h3>Confirmar Pedido</h3>
+                        <button class="ok" type="button" onclick="alert('Hello world!')">OK</button>
                     </td>
                 </tr>
             </table>
+        </section>
+        <section id="isedetec">
+            <table>
+                <tr class="objetos">
+                    <td class="conteudo">
+                        <h3>Produto</h3>
+                        <div class="descricao">
+                            <img class="img-dino" src="../img/ise.png" alt="padolabs">
+                            <div class="texto">
+                                <p>nome</p>
+                                <p>descrição do produto</p>
+                                <p>caracteristicas,tamanho,cor</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="botoes">
+                        <h3>Quantidade</h3>
+                        <button type="button" onclick="alert('Hello world!')">- 1 +</button>
+                        <input class="reset" type="reset" value="Redefinir">
+                    </td>
+                    <td class="conteudo">
+                        <h3>Entrega</h3>
+                        <div class="texto">
+                            <p>Valor antes do desconto</p>
+                            <p>Aproveite e leve também</p>
+                            <p>Valor depois do desconto, Atual!</p>
+                            <p>Quanto maximo de pclm</p>
+                       </div>
+                    </td>
+                    <td class="conteudo">
+                        <h3>Preço</h3>
+                        <div class="texto">
+                            <p>Calcule o frete e prazo</p>
+                            <p>Valor depois do desconto, Atual!</p>
+                        </div>
+                    </td>
+                    <td class="conteudo">
+                        <h3>Confirmar Pedido</h3>
+                        <button class="ok" type="button" onclick="alert('Hello world!')">OK</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
 
         <section id="ResumoDoPedido">
             <h2>Resumo do pedido</h2>

@@ -21,7 +21,7 @@ table {
     gap: 30px;
 }
 
-.titulos {
+h3 {
     padding-bottom: 40px;
 }
 
@@ -37,4 +37,15 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.descricao {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.img-dino {
+    width: 200px;
+    height: auto;
 }
