@@ -164,3 +164,24 @@ ol li:before {
     width: 420px;
     /* largura */
 }
+.fundador:hover, vi:hover {
+    border: 1px solid #000000;
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+.fundador, #container_video{
+    background: var(--bloco-background);
+
+    padding: 0px;
+    width: 15em;
+
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    
+    gap: 30px;
+}
