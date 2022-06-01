@@ -58,6 +58,7 @@ li {
     text-align: center;
     /* alinha o texto no centro */
     align-items: center;
+    
 }
 #conteiner_seg{
     display: inline;
@@ -149,14 +150,12 @@ ol li:before {
     width: 100%;
 }
 #Circuito_programa{
-    width: 100vw;
-    /* largura */
-    height: 86vh;
-    /* altura */
+   
     display: flex; 
     text-align: center;
     /* alinha o texto no centro */
     align-items: center;
+    justify-content: center;
 }
 
 .Bloco_4 , div {
@@ -170,7 +169,44 @@ ol li:before {
     /* largura */
     height: auto;
     /* altura */
+
 }
+
+
+#Circuito_programa div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Circuito_programa{
+    width: 100vw;
+    /* largura */
+    height: 86vh;
+    /* altura */
+    display: flex; 
+    text-align: center;
+    /* alinha o texto no centro */
+    /* align-items: center; */
+    padding:100px;
+}
+
+.Bloco_4 ,div{
+    width: 50%;
+    /* largura */
+    height: auto;
+    /* altura */
+}
+.Bloco_5 ,div{
+    width: 50%;
+    /* largura */
+    height: auto;
+    /* altura */
+
+   
+   }
+
 
 .imgCircuitoDino{
     border-radius: 1em;
@@ -179,14 +215,4 @@ ol li:before {
     /* sombra */
     width: 420px;
     /* largura */
-    height: 420;
-    /* altura */
-    
 }
-#Circuito_programa div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-}
-
