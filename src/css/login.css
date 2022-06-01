@@ -1,0 +1,95 @@
+body {
+    background-image: url(../img/login.jpg);
+}
+
+section {
+    padding: 100px;
+}
+
+form, div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+div {
+    gap: 10px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.login {
+    padding: 5%;
+}
+
+.bloco {
+    gap: 20px;
+}
+
+.cadastro-obj, .login-obj {
+    background: white;
+
+    padding: 40px 80px;
+    width: 15em;
+
+    align-items: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    transition: .5s;
+
+    gap: 40px;
+}
+
+.botoes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+    padding-top: 20px;
+}
+
+input {
+    padding: 5px;
+}
+
+.reset, .enviar {
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border-color: white;
+}
+
+.reset, .enviar, input {
+    font-size: 14px;
+
+    border: 1px solid #444;
+    border-radius: 30px;
+
+    padding: 10px 15px;
+    transition: .5s;
+}
+
+.reset:hover {
+    color: white;
+    background-color: red;
+    border-color: white;
+}
+
+.enviar-login {
+    padding: 10px 80px;
+}
+
+.enviar:hover {
+    color: white;
+    background-color: green;
+    border-color: white;
+}
+

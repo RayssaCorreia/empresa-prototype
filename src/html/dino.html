@@ -1,4 +1,4 @@
-<!DOCTYPE htm1>
+<!DOCTYPE html>
 <htm1 lang="pt-br">
 
     <head>
@@ -17,9 +17,18 @@
         <header>
             <h1 title="Prototype"><a href="#">Prototype</a></h1>
             <nav>
-                <ul class="links links-cabecalho">#Conteiner_Video {
-                    justify-content: center;
-                    }
+                <ul class="links links-cabecalho">
+                    <li><a class="link-cabecalho" href="index.html">Home</a></li>
+                    <li><a class="link-cabecalho" href="produtos.html">Produtos</a></li>
+                    <li><a class="link-cabecalho" href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="links links-cabecalho">
+                    <li><a class="link-cabecalho" href="login.html">Entrar</a></li>
+                    <li><a class="link-cabecalho" href="cadastro.html">Cadastrar</a></li>
+                </ul>
+            </nav>
         </header>
         <section id="Conteiner_inicial">
 
@@ -69,7 +78,7 @@
         <section id="Conteiner_Video">
             <div class="Bloco_3">
                 <h3>Exemplo do prototico em funcionamento: Dino teste!</h3>
-
+            </section>
 
 
                 <iframe class="video" width="700" height="450" src="https://www.youtube.com/embed/0WuNr-V5Mbw"
@@ -98,7 +107,7 @@
                         <br>ADC_HandleTypeDef hadc1;
                         <br>
                         <br>
-                        <br>TIM_HandleTypeDef htim2;
+                        <br>TIM_HandleT</body>ypeDef htim2;
                         <br>/* USER CODE BEGIN 2 */
                         <br>HAL_TIM_PWM_Start(&amp;htim2, TIM_CHANNEL_2);//inicializa pwm que controla servo;
                         <br>TIM2-&gt;CCR2 = 65;
@@ -126,18 +135,22 @@
                         <br>}else{
                         <br>HAL_GPIO_WritePin(Buz_GPIO_Port, Buz_Pin, GPIO_PIN_RESET);
                         <br>TIM2-&gt;CCR2 = 500;//define a posi&ccedil;&atilde;o do servo;
-                        <br>}
+                        <br>
                         <br>
                     </p>
                 </div>
-            </div>
+            </div></body>
         </section>
         <section id="Circuito_programa">
+           
             <div>
                 <div class="Bloco_4">
                     <h2>Smart Dino</h2>
                     <img class="imgCircuitoDino" src="../img/imgCircuitoDino.png" alt="circuito">
                 </div>
+            </div>
+            
+            <div>
                 <div class="Bloco_5">
                     <h3>Circuito do Programa</h3>
 
@@ -166,4 +179,4 @@
             <p class="rodape-copy">Prototype &copy; 2019</p>
         </footer>
     </body>
-</htm1>
+</html>

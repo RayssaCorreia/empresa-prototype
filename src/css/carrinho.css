@@ -1,0 +1,51 @@
+section {
+    padding: 100px;
+
+}
+
+table {
+    background: white;
+
+    padding: 30px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+
+    gap: 30px;
+}
+
+h3 {
+    padding-bottom: 40px;
+}
+
+td {
+    padding: 10px 40px;
+}
+
+p {
+    padding: 5px 0;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descricao {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.img-dino {
+    width: 200px;
+    height: auto;
+}

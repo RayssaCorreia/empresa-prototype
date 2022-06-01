@@ -159,7 +159,13 @@ ol li:before {
     align-items: center;
 }
 
-.Bloco_4{
+.Bloco_4 , div {
+    width: 50%;
+    /* largura */
+    height: auto;
+    /* altura */
+}
+.Bloco_5 , div {
     width: 50%;
     /* largura */
     height: auto;
@@ -171,9 +177,9 @@ ol li:before {
     /* borda redonda */
     box-shadow: 5px 5px 5px #00000031;
     /* sombra */
-    width: 500px;
+    width: 420px;
     /* largura */
-    height: auto;
+    height: 420;
     /* altura */
     
 }
@@ -181,5 +187,6 @@ ol li:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
+

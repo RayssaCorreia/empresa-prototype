@@ -6,5 +6,5 @@
 | Arielly | Camila     | Rayssa   |
 |---------|------------|----------|
 | Home    | Smart Dino | Produtos |
-| Sobre   |            | IseDetec |
+| Sobre   | Carrinho   | IseDetec |
 | Login   |            |          |
