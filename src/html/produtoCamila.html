@@ -1,120 +1,76 @@
-<!DOCTYPE htm1>
-<htm1 lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compartible" content="IE= edge">
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/produtoC.css">
-        <link href="https://fonts.googleapis.com/css2?family=Robolo&family=Righteous&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,500;0,700;1,300&display=swap"
-            rel="stylesheet">
-        <title>Prototype - Aproveite e leve também</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+        <title>Carrinho - Prototype</title>
     </head>
 
     <body>
         <header>
             <h1 title="Prototype"><a href="#">Prototype</a></h1>
+            <nav>
+                <ul class="links links-cabecalho">
+                    <li><a class="link-cabecalho" href="index.html">Home</a></li>
+                    <li><a class="link-cabecalho" href="produtos.html">Produtos</a></li>
+                    <li><a class="link-cabecalho" href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="links links-cabecalho">
+                    <li><a class="link-cabecalho" href="login.html">Entrar</a></li>
+                    <li><a class="link-cabecalho" href="cadastro.html">Cadastrar</a></li>
+                </ul>
+            </nav>
         </header>
         <section id="Especificacoes">
-            <hr />
-            <div class="produto_1">
-                <hr />
-                <h2>Produto</h2>
-                <hr />
-                <br>
-                <div class="conteudo">
-                    <img class="img-dino" src="../im/dino.png" alt="padolabs">
-                    <div>
-                        <p>
-                            nome e descrição do produto
-                            <hr />
-                            caracteristicas,tamanho,cor
-                            <hr />
-                            Entragas para todo o pais
-                            <hr />
-                            a nossa loja
-                            <hr />
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <hr />
-                <div class="botoon_1">
-                        <hr />
-                        <h2>Quantidade</h2>
-                        <hr />
-                        <br>
-                        <hr />
-                    <div class="conteudo_2">
-                        <div>
-                                <br>
-                                <button type="button" onclick="alert('Hello world!')">- 1 +</button>
-                            <p>
-                                
-                                <br>
-                                <br>
-                                <br>
-                                <hr>remover</hr>
-                                <hr />
-                            </p>
+            <table>
+                <tr class="titulos">
+                    <td class="titulo"><h3>Produto</h3></td>
+                    <td class="titulo"><h3>Quantidade</h3></td>                    
+                    <td class="titulo"><h3>Entrega</h3></td>
+                    <td class="titulo"><h3>Preço</h3></td>
+                    <td class="titulo"><h3>Confirmar Pedido</h3></td>
+                </tr>
+                <tr>
+                    <td class="conteudo">
+                        <div class="descricao">
+                            <img class="img-dino" src="../im/dino.png" alt="padolabs">
+                            <div class="texto">
+                                <p>nome</p>
+                                <p>descrição do produto</p>
+                                <p>caracteristicas,tamanho,cor</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            <hr />
-            <div class="entrega_1">
-                <hr />
-                <h2>Entrega</h2>
-                <div class="conteudo_3">
-                     <div>
-                         <p>
-                             <hr>Valor antes do disconto<hr>
-                               aproveite e leve também<hr>
-                               valor depois do disconto,Atual!<hr>
-                               quanto maximo de pclm<hr>
-                         </p>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div class="preco_1">
-                <hr />
-                 <h2>Preço</h2>
-                <div class="conteudo_4">
-                    <div>
-                        <p>
-                            <hr>calcule o frete e prazo<hr>
-                                valor depois do disconto,Atual!<hr>
-                        </p>
-                    </div>
-                 </div>
-            </div>
-            <hr />
-            <div class="BOT-ok">
-                <hr />
-                            <h2>Confirmar Pedido</h2>
-                <hr />
-                <div class="conteudo_5">
-                   <div>
-                            <br>
-                            <button type="button" onclick="alert('Hello world!')">OK</button>
-                   </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
+                    </td>
+                    <td class="botoes">
+                        <button type="button" onclick="alert('Hello world!')">- 1 +</button>
+                        <input class="reset" type="reset" value="Redefinir">
+                    </td>
+                    <td class="conteudo">
+                        <div class="texto">
+                            <p>Valor antes do disconto</p>
+                            <p>Aproveite e leve também</p>
+                            <p>Valor depois do disconto, Atual!</p>
+                            <p>Quanto maximo de pclm</p>
+                       </div>
+                    </td>
+                    <td class="conteudo">
+                        <div class="texto">
+                            <p>Calcule o frete e prazo</p>
+                            <p>Valor depois do disconto, Atual!</p>
+                        </div>
+                    </td>
+                    <td class="conteudo">
+                        <button type="button" onclick="alert('Hello world!')">OK</button>
+                    </td>
+                </tr>
+            </table>
 
         <section id="ResumoDoPedido">
             <h2>Resumo do pedido</h2>
@@ -148,16 +104,12 @@
             <div class="rodape">
                 <h1 title="Prototype"><a href="#">Prototype</a></h1>
                 <ul class="links links-social">
-                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/facebook.png"
-                                alt="Foto do icone do Facebook" title="Facebook"></a></li>
-                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/instagram.png"
-                                alt="Foto do icone do Instagram" title="Instagram"></a></li>
-                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/whatsapp.png"
-                                alt="Foto do icone do Whatsapp" title="Whatsapp"></a></li>
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/facebook.png" alt="Foto do icone do Facebook" title="Facebook"></a></li>
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/instagram.png" alt="Foto do icone do Instagram" title="Instagram"></a></li>
+                    <li><a class="social-link" href="#"><img class="img-icon" src="../img/whatsapp.png" alt="Foto do icone do Whatsapp" title="Whatsapp"></a></li>
                 </ul>
             </div>
             <p class="rodape-copy">Prototype &copy; 2019</p>
         </footer>
     </body>
-</htm1>
---
+</html>
