@@ -7,8 +7,9 @@
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/login.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
-        <title>Login - Prototype</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+        <title>Cadastro - Prototype</title>
     </head>
     <body>
         <header>
@@ -20,18 +21,26 @@
                     <li><a class="link-cabecalho" href="sobre.html">Sobre</a></li>
                 </ul>
             </nav>
-            <nav>
-                <ul class="links links-cabecalho">
-                    <li><a class="link-cabecalho" href="login.html">Entrar</a></li>
-                    <li><a class="link-cabecalho" href="cadastro.html">Cadastrar</a></li>
-                </ul>
-            </nav>
         </header>
         <section>
-            <form class="login" action="/cadrasto">
-                <div class="login-obj">
-                    <h2>Entrar</h2>
+            <form class="cadastro" action="/cadrasto">
+                <div class="cadastro-obj">
+                    <h2>Cadastre-se</h2>
                     <div class="bloco">
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome">
+                        </div>
+                        <div>
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="bloco">
+                        <div>
+                            <label for="tel">Telefone</label>
+                            <input type="tel" id="tel" name="celular" placeholder="+xx xx xxxx-xxxx">
+                        </div>
                         <div>
                             <label for="email">E-mail</label>
                             <input type="email" id="email" name="email" placeholder="prototype@gmail.com">
@@ -42,7 +51,8 @@
                         </div>
                     </div>
                     <div class="botoes">
-                        <input class="enviar enviar-login" type="submit" value="Enviar">
+                        <input class="reset" type="reset" value="Redefinir">
+                        <input class="enviar" type="submit" value="Enviar">
                     </div>
                 </div>
             </form>
