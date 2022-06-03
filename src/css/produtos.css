@@ -10,7 +10,8 @@ body{
 }
 
 section {
-    padding: 100px;
+    padding: 60px;
+
 }
 
 h2, h3 {
@@ -39,16 +40,33 @@ br{
 
 .lado{
     justify-content:flex-end;
+    padding-top: 20px;
 }
 
 .img2{
     border-radius: 20px;
+    order: 2;
+    height: auto;
+    width: 300px;
+
+
 }
 
 .config{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+    transition: .5s;
+    gap: 30px;
+    
+}
+.config:hover{
+    transform: scale(1.1);
 }
 
 
@@ -69,8 +87,47 @@ br{
 }
 .produtos021{
     text-align: center;
+    padding: 0 60px;
 }
  
 .texto01{
     padding-left: 30px;
+    order: 1;
 }
+
+#zap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.zaap:hover, .title:hover{
+    transform: scale(1.1);
+}
+
+.zaap{
+    height: auto;
+    width: 100px; 
+}
+
+@media screen and (min-width: 1024px) {
+
+    .config{
+        flex-direction: row;
+    }
+
+    .img2{
+        height: auto;
+        width: 600px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    section {
+        padding: 100px 300px;
+    
+    }
+} 

@@ -1,4 +1,3 @@
-
 ol li:before {
     content: "• ";
 }
@@ -9,7 +8,7 @@ ol li{
 
 .foto{
     border-radius: 20px;
-    height: 400px;
+    height: 200px;
 }
 
 .valor{
@@ -37,6 +36,9 @@ ol li{
     border: 1px solid #ffffff;
 }
 
+.bla{
+    padding-top: 100px;
+}
 #bla:hover{
     transform: scale(1);
 }
@@ -50,23 +52,12 @@ section {
 }
 
 .fotos {
-    display: flex;
-    gap: 40px;
+    display: none;
   
 }
 .foto:hover{
-    border: 1px solid #000000;
     transform: scale(1.1);
 }
-
-.produto{
-    padding-top: 100px;
-    display: flex;
-
-    gap: 100px;
-    justify-content: center;
-}
-
 .texto, .texto2{
     background: var(--bloco-background);
     padding: 25px;
@@ -79,9 +70,13 @@ section {
     transition: .5s;
     gap: 30px;
 }
-.texto:hover, .componente2{
-    border: 1px solid #000000;
+.texto:hover, .componente2:hover, .comentario:hover{
     transform: scale(1.1);
+}
+
+.foto1, .componente2, .foto{
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 8px 5px #00000033;
 }
 
 .local{
@@ -117,41 +112,46 @@ section {
 }
 
 .B{
-    padding-bottom: 15px;
+    padding: 20px 0;
+    
     
 }
 
-.C{
-    padding-top: 80px;
-    padding-bottom: 15px;
+.text, .img {
+    display: flex;
 }
 
-.text, .img, .caixa{
+.comentario{
+    padding: 700px;
+    width: 1000px;
+}
+
+.text, .img, .caixa, .comentario{
     background: var(--bloco-background);
     padding: 20px;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
     border: 1px solid #ffffff;
     border-radius: 30px;
     box-shadow: 2px 2px 8px 5px #00000033;
     transition: .5s;
     gap: 30px;
     align-items: center;
+
 }
 .img{
     margin-right: 35px;
 }
-.text:hover, .texto2:hover{
-    border: 1px solid #000000;
+.text:hover, .texto2:hover, .componente2:hover{
     transform: scale(1.1);
 }
 .img:hover, .foto1:hover{
-    border: 1px solid #000000;
     transform: scale(1.1);
 }
 
 .hackathon {
     display: flex;
+    flex-direction:column;
     justify-content: center;
     gap: 100px;
 }
@@ -160,6 +160,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-direction: column;
 }
 
 .component{
@@ -167,6 +168,8 @@ section {
     display: flex;
     justify-content: center;
     gap: 100px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .componente2{
@@ -174,11 +177,15 @@ section {
     height: 250px;
     border-radius: 20px;
     border: 1px solid #ffffff;
+
 }
-.comentarios{
-    align-items: center;
+.Comentarios{
+    display: flex;
     justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;   
 }
+
 #botao{
     background-color: #373b37; 
     color: white;
@@ -200,3 +207,42 @@ section {
   .estrelas input[type=radio]:checked ~ label i.fa:before {
     color: #CCC;
 }
+
+.produto{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.video{
+    width: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .produto{
+        flex-direction: row;
+    }
+    
+    .foto{
+        height: 400px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    
+    .hackathon, .funcionamento, .component{
+        flex-direction: row;
+    }
+    .fotos {
+        display: flex;
+        gap: 40px;
+      
+    }
+    
+} 
