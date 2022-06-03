@@ -50,10 +50,8 @@
 
         <section id="conteiner_seg">
             <div class="Bloco_2">
+                
                 <h3>Componentes usados no Projeto:</h3>
-                <div class="Card">
-
-                </div>
                 <ol>
                     <li class="text">Server Motor</li>
                     <li class="text">Placa STM32 (Não precisa ser necessariamente essa)</li>
@@ -72,86 +70,31 @@
                     na parte de produção de vinho, onde faria o processo de metida do<br>
                     vinho, tendo assim um controle de produção,vendo se está sendo <br>
                     fiscalizada na medida certado recipiente.
-            </div>
+            
+        </div>
         </section>
 
         <section id="Conteiner_Video">
             <div class="Bloco_3">
                 <h3>Exemplo do prototico em funcionamento: Dino teste!</h3>
-         
-
-                <div class="vi">
+                
                 <iframe class="video" width="700" height="450" src="https://www.youtube.com/embed/0WuNr-V5Mbw"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                </div>
             </div>
         </section>
-        <section class="Codigo">
-            <div class="codigo_container1">
-                <h1 class="codigo_title"> Codigo do Produto!</h1>
-
-                <div class="codigo1">
-                    <p> /* Includes */
-                        <br> #include &quot;main.h&quot;
-                        <br>
-                        <br> /* USER CODE BEGIN Includes */
-                        <br> #include&lt;stdint.h&gt;
-                        <br>
-                        <br> /* USER CODE BEGIN PTD */
-                        <br> uint32_t ldr = 0, timer = 0;
-                        <br> uint8_t flag = 0;
-                        <br>
-                        <br>
-                        <br> /* Private variables ---------------------------------------------------------*/
-                        <br>ADC_HandleTypeDef hadc1;
-                        <br>
-                        <br>
-                        <br>TIM_HandleT</body>ypeDef htim2;
-                        <br>/* USER CODE BEGIN 2 */
-                        <br>HAL_TIM_PWM_Start(&amp;htim2, TIM_CHANNEL_2);//inicializa pwm que controla servo;
-                        <br>TIM2-&gt;CCR2 = 65;
-                        <br>
-                        <br>
-                        <br>/* USER CODE BEGIN WHILE */
-                        <br>while (1)
-                        <br>{
-                        <br>//leitura do LDR por ADC;
-                        <br>HAL_ADC_Start(&amp;hadc1);
-                        <br>HAL_ADC_PollForConversion(&amp;hadc1, 1);
-                        <br>ldr = HAL_ADC_GetValue(&amp;hadc1);
-                        <br>
-                        <br>
-                        <br>ADC_HandleTypeDef hadc1;
-                        <br>
-                        <br>TIM_HandleTypeDef .Bloco_5{
-
-                        }htim2;
-                        <br>
-                        <br>//se identificar obstaculo ativa o servo;
-                        <br>if (ldr &gt; 8) {
-                        <br>HAL_GPIO_WritePin(Buz_GPIO_Port, Buz_Pin, GPIO_PIN_SET);
-                        <br>TIM2-&gt;CCR2 = 300;//define a posi&ccedil;&atilde;o do servo;
-                        <br>}else{
-                        <br>HAL_GPIO_WritePin(Buz_GPIO_Port, Buz_Pin, GPIO_PIN_RESET);
-                        <br>TIM2-&gt;CCR2 = 500;//define a posi&ccedil;&atilde;o do servo;
-                        <br>
-                        <br>
-                    </p>
-                </div>
-            </div>
-        </section>
+        
         <section id="Circuito_programa">
-                <div class="Bloco_4">
+                <div class="Bloco_5">
                    
                     <img class="imgCircuitoDino" src="../img/imgCircuitoDino.png" alt="circuito">
                 </div>
 
-                <div class="Bloco_5">
+                <div class="Bloco_6">
                     <h3>Circuito do Programa</h3>
 
-                    <p class="text">O server motor foi adaptado para que ficasse em uma posição pra quando fosse
+                    <p class="vi">O server motor foi adaptado para que ficasse em uma posição pra quando fosse
                         precionado
                         ele fizesse o movimento de pulo precionado o teclado.
                         O Sensor foi adptado também pra que quando estivesse em movimento ele reconhecesse-se a
@@ -160,7 +103,7 @@
                     </div>
             
         </section>
-
+ 
         <footer>
             <div class="rodape">
                 <h1 title="Prototype"><a href="#">Prototype</a></h1>
