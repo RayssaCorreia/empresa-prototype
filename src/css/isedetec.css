@@ -70,9 +70,13 @@ section {
     transition: .5s;
     gap: 30px;
 }
-.texto:hover, .componente2{
-    border: 1px solid #000000;
+.texto:hover, .componente2:hover, .comentario:hover{
     transform: scale(1.1);
+}
+
+.foto1, .componente2, .foto{
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 8px 5px #00000033;
 }
 
 .local{
@@ -138,12 +142,10 @@ section {
 .img{
     margin-right: 35px;
 }
-.text:hover, .texto2:hover{
-    border: 1px solid #000000;
+.text:hover, .texto2:hover, .componente2:hover{
     transform: scale(1.1);
 }
 .img:hover, .foto1:hover{
-    border: 1px solid #000000;
     transform: scale(1.1);
 }
 

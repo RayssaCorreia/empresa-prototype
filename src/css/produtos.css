@@ -66,7 +66,6 @@ br{
     
 }
 .config:hover{
-    border: 1px solid #000000;
     transform: scale(1.1);
 }
 
@@ -100,8 +99,11 @@ br{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-   
+    gap: 30px; 
+}
+
+.zaap:hover, .title:hover{
+    transform: scale(1.1);
 }
 
 .zaap{
