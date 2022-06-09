@@ -121,7 +121,7 @@ br{
         height: auto;
         width: 600px;
     }
-}
+} 
 
 
 @media screen and (min-width: 768px) {
@@ -129,5 +129,10 @@ br{
     section {
         padding: 100px 300px;
     
+    }
+
+    .img2{
+        height: auto;
+        width: 400px;
     }
 } 
