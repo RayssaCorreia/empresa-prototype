@@ -1,12 +1,13 @@
-section {
+section{
     padding: 100px;
-
+    display: flex;
+    align-items: center;
 }
 
 table {
     background: white;
 
-    padding: 30px;
+    padding: 0px;
     width: 100%;
 
     display: flex;
@@ -17,6 +18,7 @@ table {
     border: 1px solid #ffffff;
     border-radius: 30px;
     box-shadow: 2px 2px 8px 5px #00000033;
+    transition: 0.3s;
 
     gap: 30px;
 }
@@ -48,4 +50,34 @@ p {
 .img-dino {
     width: 200px;
     height: auto;
+}
+.fundador, #dino{
+    background: var(--bloco-background);
+
+    padding: 0px;
+    width: 15em;
+
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px 5px #00000033;
+
+    gap: 30px;
+}
+
+.fundador:hover, table:hover {
+    border: 1px solid #000000;
+    transform: scale(1.1);
+}
+.cabecalho{
+    align-items: center;
+}
+.clono{
+    padding: 0px;
+}
+
+.cabecalho3, .div {
+    padding: 30px;
 }
