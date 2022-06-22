@@ -29,11 +29,11 @@ h2 {
     gap: 20px;
 }
 
-.cadastro-obj, .login-obj {
+.cadastro-obj {
     background: white;
 
     padding: 40px 80px;
-    width: 15em;
+    width: 20em;
 
     align-items: center;
 
@@ -65,7 +65,30 @@ input {
     width: 10em;
 }
 
-.reset, .enviar, input {
+.radio {
+    flex-direction: row;
+}
+
+legend {
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.nascimento {
+    padding: 20px 0;
+}
+
+.num-cartao {
+    padding-top: 20px;
+}
+
+.reset, .enviar, input, select {
     font-size: 14px;
 
     border: 1px solid #444;
