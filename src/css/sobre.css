@@ -2,9 +2,9 @@
     /* colors */
     --bloco-color: #000;
     --bloco-background: rgb(255, 255, 255);
-    --fundador-background-1: rgb(0, 225, 255);
-    --fundador-background-2: rgb(255, 0, 157);
-    --fundador-background-3: rgb(153, 0, 255);
+    --fundador-background-1: #f5bf38;
+    --fundador-background-2: rgb(250, 56, 175);
+    --fundador-background-3: rgb(53, 228, 252);
 }
 
 body, #sobre, .empresa, .text-empresa, .projetos, #fundadores, .fundadores, .fundador, .cursos , #mvv, .mvv, .mvv-obj {

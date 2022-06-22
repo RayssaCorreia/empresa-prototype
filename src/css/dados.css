@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/login.jpg);
+    background: linear-gradient(to right, var(--main-color-1), var(--main-color-2), var(--main-color-3));
 }
 
 section {
